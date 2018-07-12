@@ -13,7 +13,7 @@ module FormsLab
 
     post "/pirates" do
       binding.pry
-      @pirate = Pirate.new(params[:pirate][:name], params[:pirate][:weight], params[:pirate][:height])
+      @pirate = Pirate.new(params[:pirate])
       params[:pirate][:ships].each do |ships|
         Ship.new(ships)
       end
