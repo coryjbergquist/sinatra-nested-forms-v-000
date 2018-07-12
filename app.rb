@@ -11,5 +11,8 @@ module FormsLab
       erb :"pirates/new"
     end
 
+    get "/pirates" do
+      erb :"pirates/show"
+
   end
 end
