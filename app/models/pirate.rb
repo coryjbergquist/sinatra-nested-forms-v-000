@@ -7,5 +7,5 @@ class Pirate
       @weight = params[:weight]
       @height = params[:height]
     end
-  
+
 end
